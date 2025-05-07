@@ -1,0 +1,40 @@
+VBox {
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+Button {
+    -fx-font-size: 14px;
+    -fx-background-color: #4A90E2;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: #3A78BA;
+}
+
+Button:pressed {
+    -fx-background-color: #2E6090;
+}
+
+ProgressIndicator {
+    -fx-max-width: 50;
+    -fx-max-height: 50;
+}
+
+TilePane {
+    -fx-padding: 10;
+    -fx-background-color: #F7F8FA;
+    -fx-border-color: #607D8B;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+}
+
+.image-box-selected {
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 3;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600" prefWidth="800" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ImageClassifierController">
+    <children>
+        <!-- Add a VBox to wrap the text and center it -->
+        <VBox fx:id="titleBox" layoutX="0.0" layoutY="71.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+            <Text fx:id="welcomeText" fill="#4b4b4b" text="Welcome to the Image Classifier!" textAlignment="CENTER" underline="true">
+                <font>
+                    <Font name="Georgia Bold" size="24.0" />
+                </font>
+            </Text>
+        </VBox>
+
+        <Button fx:id="loadButton" layoutX="46.0" layoutY="160.0" prefHeight="41.0" prefWidth="150.0" text="Load Images" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="160.0" />
+        <Button fx:id="classifyButton" layoutX="47.0" layoutY="224.0" prefHeight="41.0" prefWidth="150.0" text="Classify Images" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="224.0" />
+        <Button fx:id="resetButton" layoutX="48.0" layoutY="463.0" prefHeight="41.0" prefWidth="150.0" text="Reset" AnchorPane.bottomAnchor="95.4" AnchorPane.leftAnchor="48.0" />
+        <Button fx:id="deleteButton" layoutX="47.0" layoutY="388.0" prefHeight="42.0" prefWidth="150.0" text="Delete Selected Images" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="48.0" />
+
+        <ProgressIndicator fx:id="loadingIndicator" layoutX="58.0" layoutY="312.0" maxHeight="62.0" maxWidth="93.0" prefHeight="27.0" prefWidth="34.0" AnchorPane.bottomAnchor="260.8" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="312.0" />
+
+        <!-- TilePane to display images and labels -->
+        <TilePane fx:id="imageDisplayPane" hgap="10.0" layoutX="315.2" layoutY="160.0" prefHeight="344.0" prefWidth="434.0" style="-fx-border-color: #607D8B; -fx-background-color: #F7F8FA; -fx-padding: 10;" vgap="10.0" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="160.0" />
+
+        <Text fill="#4CAF50" layoutX="325.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your license is active! Enjoy seamless image classification with premium features." textAlignment="CENTER" wrappingWidth="424.766482591629" AnchorPane.bottomAnchor="44.0" AnchorPane.rightAnchor="50.23351740837097">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Text>
+
+        <Text layoutX="14.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version 3.0.0 beta" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+    </children>
+</AnchorPane>
